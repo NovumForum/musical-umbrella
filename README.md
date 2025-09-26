@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/22244587/README.md)
 # Novum Focus - AI-Powered Productivity SaaS
 
 A complete productivity application with focus timer, task management, and Stripe billing integration.
