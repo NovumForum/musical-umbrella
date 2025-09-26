@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MrProPacks - Premium product packs and bundles for professionals. Discover amazing deals on curated product collections.">
+    <meta name="keywords" content="product packs, bundles, deals, premium products, mrpropacks">
+    <meta name="author" content="MrProPacks">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mrpropacks.com/">
+    <meta property="og:title" content="MrProPacks - Premium Product Packs & Bundles">
+    <meta property="og:description" content="Discover amazing deals on curated product collections. Find the perfect pack for your needs!">
+    <meta property="og:image" content="assets/img/mrpropacks-og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mrpropacks.com/">
+    <meta property="twitter:title" content="MrProPacks - Premium Product Packs & Bundles">
+    <meta property="twitter:description" content="Discover amazing deals on curated product collections. Find the perfect pack for your needs!">
+    <meta property="twitter:image" content="assets/img/mrpropacks-og.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "MrProPacks",
+        "url": "https://mrpropacks.com",
+        "description": "Premium product packs and bundles for professionals",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://mrpropacks.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <title>MrProPacks - Premium Product Packs & Bundles</title>
+    <link rel="canonical" href="https://mrpropacks.com/">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <div class="nav-brand">
+                <a href="#" class="logo" aria-label="MrProPacks Home">
+                    <span class="logo-text">MrProPacks</span>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#pack-generator" class="nav-link">Pack Generator</a></li>
+                    <li><a href="#quiz" class="nav-link">Find Your Pack</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title" class="hero-title">
+                        Premium Product Packs 
+                        <span class="highlight">Made Simple</span>
+                    </h1>
+                    <p class="hero-description">
+                        Discover curated product bundles designed for professionals like you. 
+                        Save time, save money, and get everything you need in one perfect pack.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary" onclick="scrollToSection('products')">
+                            Explore Packs
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('pack-generator')">
+                            Generate Pack Name
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="pack-preview">
+                            <div class="pack-icon">📦</div>
+                            <h3>Pro Starter Pack</h3>
+                            <div class="pack-items">
+                                <span class="item">✓ Premium Tools</span>
+                                <span class="item">✓ Resources</span>
+                                <span class="item">✓ Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pack Name Generator -->
+        <section id="pack-generator" class="pack-generator" aria-labelledby="generator-title">
+            <div class="container">
+                <h2 id="generator-title" class="section-title">Pack Name Generator</h2>
+                <p class="section-description">
+                    Need inspiration? Generate creative pack names for your products!
+                </p>
+                
+                <div class="generator-container">
+                    <div class="generator-controls">
+                        <div class="input-group">
+                            <label for="pack-category" class="input-label">Category</label>
+                            <select id="pack-category" class="form-select">
+                                <option value="">Choose a category...</option>
+                                <option value="business">Business</option>
+                                <option value="creative">Creative</option>
+                                <option value="tech">Technology</option>
+                                <option value="lifestyle">Lifestyle</option>
+                                <option value="education">Education</option>
+                                <option value="fitness">Fitness</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="pack-style" class="input-label">Style</label>
+                            <select id="pack-style" class="form-select">
+                                <option value="">Choose a style...</option>
+                                <option value="professional">Professional</option>
+                                <option value="fun">Fun & Playful</option>
+                                <option value="minimal">Minimal</option>
+                                <option value="bold">Bold</option>
+                                <option value="classic">Classic</option>
+                            </select>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="generatePackName()">
+                            Generate Name
+                        </button>
+                    </div>
+                    
+                    <div class="generator-result" id="generator-result">
+                        <div class="result-placeholder">
+                            <div class="result-icon">✨</div>
+                            <p>Click "Generate Name" to create your perfect pack name!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products" aria-labelledby="products-title">
+            <div class="container">
+                <h2 id="products-title" class="section-title">Featured Product Packs</h2>
+                <p class="section-description">
+                    Carefully curated bundles designed to meet your specific needs
+                </p>
+                
+                <div class="products-grid">
+                    <!-- Product cards will be populated by JavaScript -->
+                </div>
+                
+                <div class="products-cta">
+                    <button class="btn btn-outline" onclick="loadMoreProducts()">
+                        Load More Packs
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Finder Quiz -->
+        <section id="quiz" class="quiz" aria-labelledby="quiz-title">
+            <div class="container">
+                <h2 id="quiz-title" class="section-title">Find Your Perfect Pack</h2>
+                <p class="section-description">
+                    Take our quick quiz to discover which product pack is right for you
+                </p>
+                
+                <div class="quiz-container">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="quiz-progress"></div>
+                        </div>
+                        <span class="progress-text" id="progress-text">Question 1 of 5</span>
+                    </div>
+                    
+                    <div class="quiz-content" id="quiz-content">
+                        <!-- Quiz questions will be populated by JavaScript -->
+                    </div>
+                    
+                    <div class="quiz-controls">
+                        <button class="btn btn-outline" id="quiz-prev" onclick="previousQuestion()" disabled>
+                            Previous
+                        </button>
+                        <button class="btn btn-primary" id="quiz-next" onclick="nextQuestion()">
+                            Next
+                        </button>
+                    </div>
+                    
+                    <div class="quiz-result" id="quiz-result" style="display: none;">
+                        <!-- Quiz result will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 id="about-title" class="section-title">Why Choose MrProPacks?</h2>
+                        <p class="about-description">
+                            We believe in the power of curated experiences. Each product pack is 
+                            carefully assembled by experts who understand what professionals need 
+                            to succeed in their field.
+                        </p>
+                        <div class="features-list">
+                            <div class="feature">
+                                <div class="feature-icon">🎯</div>
+                                <div class="feature-content">
+                                    <h3>Expertly Curated</h3>
+                                    <p>Every pack is assembled by industry professionals</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">💰</div>
+                                <div class="feature-content">
+                                    <h3>Great Value</h3>
+                                    <p>Save up to 40% compared to buying items separately</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">⚡</div>
+                                <div class="feature-content">
+                                    <h3>Fast Delivery</h3>
+                                    <p>Get your packs delivered quickly and safely</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-number">10K+</div>
+                                <div class="stat-label">Happy Customers</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Product Packs</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">Satisfaction Rate</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Customer Support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Have questions or need help finding the perfect pack? We're here to help!
+                </p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email Us</h3>
+                                <p>hello@mrpropacks.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">💬</div>
+                            <div class="contact-details">
+                                <h3>Live Chat</h3>
+                                <p>Available 24/7 for support</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h3>Follow Us</h3>
+                                <p>@mrpropacks on social media</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contact-form" class="form">
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="contact-name" class="input-label">Name</label>
+                                    <input type="text" id="contact-name" name="name" class="form-input" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="contact-email" class="input-label">Email</label>
+                                    <input type="email" id="contact-email" name="email" class="form-input" required>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="contact-subject" class="input-label">Subject</label>
+                                <input type="text" id="contact-subject" name="subject" class="form-input" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="contact-message" class="input-label">Message</label>
+                                <textarea id="contact-message" name="message" class="form-textarea" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">MrProPacks</span>
+                    </div>
+                    <p class="footer-description">
+                        Premium product packs for professionals worldwide.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="#products">Featured Packs</a></li>
+                            <li><a href="#pack-generator">Pack Generator</a></li>
+                            <li><a href="#quiz">Find Your Pack</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Shipping Info</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MrProPacks. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Follow us on Twitter">📱</a>
+                    <a href="#" aria-label="Follow us on Facebook">📘</a>
+                    <a href="#" aria-label="Follow us on Instagram">📷</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Animation -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading amazing packs...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/packGenerator.js"></script>
+</body>
+</html>
